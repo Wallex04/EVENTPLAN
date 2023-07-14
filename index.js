@@ -11,21 +11,15 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-// var swiper = new swiper(".home-slider", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//    coverflowEffect: {
-//       rotate: 0,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 2,
-//       slideShadows: true,
-//     },
-//     loop:true,
-//     autoplay:{
-//         delay: 3000,
-//         disableOnInteraction : false,
-//     }
-//   });
+
+
+
+  const registerLink = document.querySelectorAll(".registerLink");
+  console.log(registerLink);
+        registerLink.forEach(register=> {
+            register.addEventListener("click", (event) => { 
+               event.preventDefault();
+                window.location = "./registration/registration.html";
+            })
+        });
+    
