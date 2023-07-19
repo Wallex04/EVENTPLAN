@@ -116,13 +116,17 @@ section{
 
 .home .content h3 {
     color: #fff;
-    font-size: 4.5rem;
-    text-transform: uppercase;
+    font-size: 6rem;
+    text-transform: capitalize;
 }
 
-.home .content h3 span{
+.home .content  span{
     color: var(--main-color);
-    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    line-height: .3rem;
+    text-transform: lowercase;
 }
 
 
