@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Organizer/Organizer.css">
+    <link rel="stylesheet" href="/Events/event.css">
     <title>Document</title>
+    <script defer src="./organizer.js"></script>
 </head>
 <body>
     <main>
-        <form class="register" id="Organizer">
-            <h2 class="heading">Register for your event</h2>
-            
-        <div class="input-containers">
-            <label for="firstName">first Name</label>
-            <input type="text" placeholder="firstName" name="Name">
-        </div>
-        
-        <div class="input-containers">
-            <label for="lastName">last Name</label>
-            <input type="text" placeholder="lastName" name="Name">
-        </div>
-        
-        <div class="input-containers">
-            <label for="username">Username</label>
-            <input type="text" placeholder="userName" name="Name">
-        </div>
-        
-        <div class="input-containers">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email" name="email">
-        </div>
-        <div class="input-containers">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" placeholder="Enter your phone number" name="phoneNumber">
-        </div>
-        
-        
-        
-        <div class="input-containers">
-            <label for="Password">Password</label>
-            <input type="text" placeholder="Password" name="password">
-        </div>
-        
-        <div class="input-containers">
-            <label for="role">role</label>
-            <input type="text" placeholder="Role">
-        </div>
-        
-        
-        <button class="btn">Register</button>
-        </form>
-        </main>
+    <form id="register">
+    <div class="input-containers">
+        <label for="eventsName">event name</label>
+        <input type="text" placeholder="eventName" name="event name">
+    </div>
+    
+    <div class="input-containers">
+        <label for="Description">Description</label>
+        <input type="text" placeholder="Description" name="Description">
+    </div>
+    
+    <div class="input-containers">
+        <label for="Organizer">Organizer Id</label>
+        <input type="text" placeholder="Organizer Id" name="Organizer" >
+    </div>
+    
+    <div class="input-containers">
+        <label for="address">Address</label>
+        <input type="text" placeholder="Enter your address" name="address">
+    </div>
+    
+    <div class="input-containers">
+        <label for="Number">Event Date</label>
+        <input type="number" placeholder="yyyy" name="eventDate">
+        <input type="number" placeholder="mm" name="eventDate">
+        <input type="number" placeholder="dd" name="eventDate">
+       
+        <input type="number" placeholder="hr" name="hour">
+        <input type="number" placeholder="minute" name="minute">
+    </div>
+  
+        <div class="anchor">
+        <a class="bta" href="/Participant/participant.html">Register</a>
+    </div>
+        <!-- <button type="submit" id="cta">Register event</button>  -->
+</form>
+</main>
 </body>
 </html>
+
+

@@ -4,12 +4,13 @@ async function register() {
     // Get the form values
     const firstName = document.querySelector('input[name="firstName"]').value;
     const lastName = document.querySelector('input[name="lastName"]').value;
-    const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+    const username = document.querySelector('input[name="userName"]').value;
     const email = document.querySelector('input[name="email"]').value;
+    const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
     const password = document.querySelector('input[name="password"]').value;
-  
+    const role = document.querySelector('input[name="role"]').value;
     // Check if all input fields are empty
-    if (!firstName || !lastName || !phoneNumber || !email || !password) {
+    if (!firstName || !lastName || !phoneNumber || !email || !password || !username || !role) {
       alert('Please fill in all the fields.');
       return;
     }
@@ -18,22 +19,26 @@ async function register() {
     const data = {
       firstName,
       lastName,
-      phoneNumber,
+      username,
       email,
+      phoneNumber,
       password,
+      role,
+      
     };
   
     try {
       // Send the data to the backend API endpoint
-      const response = await fetch('http://vitality.us-east-1.elasticbeanstalk.com/api/patient/signup', {
-        // const response = await fetch('http://192.168.62.209:8080/api/v1/eventplanner/auth/organizer/organizer', {
+      // const response = await fetch('http://vitality.us-east-1.elasticbeanstalk.com/api/patient/signup', {
+        const response = await fetch('http://192.168.62.209:8080/api/v1/eventplanner/auth/organizer/organizer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
-  
+
+
       if (response.ok) {
         // Registration successful
         alert('Registration successful!');

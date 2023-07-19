@@ -5,13 +5,13 @@
   }
   
   /* Body styles */
-  /* body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
   } */
-  
-  /* Main container */
-  /* main {
+
+/* Main container */
+/* main {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -88,3 +88,10 @@
       font-size: 12px;
     }
   }  */
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

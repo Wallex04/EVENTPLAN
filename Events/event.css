@@ -1,97 +1,99 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Body styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  #register {
-    background: url(/images/form\ background\ image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Main container */
-  main {
-    max-width: 600px;
-    border-radius: 1rem;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Form styles */
-  .register {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .heading {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-containers {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  
-  .event-type {
-    margin-bottom: 15px;
-  }
-  
-  .additional-info {
-    margin-bottom: 20px;
-  }
-  
-  .event p {
-    margin-bottom: 5px;
-  }
-  
-  .event select{
-    width: 100%;
-    margin-bottom: 5rem;
-    border: none;
-    padding: 1rem;
-  }
-  
-  .event select option {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin-bottom: 2rem;
-  }
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
 
+#register {
+  /* background: url(/images/form\ background\ image.png); */
+  background: rgb(13, 39, 27);
+  color: #fff;
+  font-size: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container */
+main {
+  max-width: 600px;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styles */
+.register {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-containers {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.event-type {
+  margin-bottom: 15px;
+}
+
+.additional-info {
+  margin-bottom: 20px;
+}
+
+.event p {
+  margin-bottom: 5px;
+}
+
+.event select {
+  width: 100%;
+  margin-bottom: 5rem;
+  border: none;
+  padding: 1rem;
+}
+
+.event select option {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
 
 button {
   display: flex;
@@ -108,11 +110,11 @@ button {
   overflow: hidden;
   transition: all 0.5s ease-in;
   z-index: 1;
- }
- 
- button::before,
- button::after {
-  content: '';
+}
+
+button::before,
+button::after {
+  content: "";
   position: absolute;
   top: 0;
   width: 0;
@@ -121,30 +123,45 @@ button {
   transition: all 0.5s;
   overflow: hidden;
   z-index: -1;
- }
- 
- button::before {
+}
+
+button::before {
   left: -10px;
   background: orangered;
- }
- 
- button::after {
+}
+
+button::after {
   right: -10px;
   background: #5a189a;
- }
- 
- button:hover::before,
- button:hover::after {
+}
+
+button:hover::before,
+button:hover::after {
   width: 58%;
- }
- 
- button:hover span {
+}
+
+button:hover span {
   color: #e0aaff;
   transition: 0.3s;
- }
- 
- button span {
+}
+
+button span {
   color: orangered;
   font-size: 1.4rem;
   transition: all 0.3s ease-in;
- }
+}
+
+.anchor a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  background: #333;
+  border-radius: 0.5rem;
+  /* display: block; */
+  margin: auto;
+}
+
+.anchor {
+  margin-left: 6rem;
+  margin: auto;
+}

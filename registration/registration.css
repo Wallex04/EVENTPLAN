@@ -10,7 +10,7 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
 }
 
 /* Main container */
@@ -22,9 +22,12 @@ main {
 
 /* Form styles */
 .register {
-  background-color: #fff;
+  /* background: url(/images/form\ background\ image.png); */
+  background: rgb(13, 13, 39);
+  color: #fff;
   border-radius: 5px;
   padding: 20px;
+  background-size: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,6 +49,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="password"],
 input[type="date"],
 input[type="number"] {
   width: 100%;

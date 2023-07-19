@@ -60,7 +60,8 @@
 }
 
 .feedback .box:hover {
-    background: olive;
+    background: rgb(105, 105, 11);
+    transition: all 0.3s ease-in-out;
 }
 
 .feedback .box .fa-quote-right{
@@ -116,6 +117,12 @@
     font-size: 1.6rem;
 }
 
+.feedback .box p:hover{
+    font-size: 3em;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .contact form {
     max-width: 70rem;
@@ -129,6 +136,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .contact form .inputBox input,
@@ -141,6 +149,12 @@
     font-size: 3.5rem;
     color: #fff;
     text-transform: none;
+}
+
+.contactUsForm{
+    padding: 20px;
+    /* border: 2px solid red; */
+    color: #fff;
 }
 .event {
     font-size: 2rem;
@@ -289,6 +303,12 @@
      } 
      .swipper-cover {
          grid-template-columns: (1fr);
+        
+     }
+
+     .swiper-slide img {
+        width:25rem;
+        margin: auto;
      }
  
      .swipper-cover .swiper-slide img {
